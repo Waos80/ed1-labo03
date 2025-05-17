@@ -37,13 +37,11 @@ public class E02AutocompleteSystem {
     }
 
     public E02AutocompleteSystem(String[] sentences, int[] times) {
-
         this.map = new HashMap<>();
         this.builder = new StringBuilder();
         for (int i = 0; i < sentences.length; i++) {
             this.map.put(sentences[i], times[i]);
         }
-
     }
 
     public List<String> input(char c) {
